@@ -1,0 +1,63 @@
+{
+  "name": "pxweb2-next-pagerouter-styledcomponents",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "pxweb2-next-pagerouter-styledcomponents",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/pxweb2-next-pagerouter-styledcomponents"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "pxweb2-next-pagerouter-styledcomponents"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "pxweb2-next-pagerouter-styledcomponents:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "pxweb2-next-pagerouter-styledcomponents:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "pxweb2-next-pagerouter-styledcomponents:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "pxweb2-next-pagerouter-styledcomponents:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "pxweb2-next-pagerouter-styledcomponents/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "pxweb2-next-pagerouter-styledcomponents/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
