@@ -17,6 +17,14 @@ const nextConfig = {
     // For other options, see https://styled-components.com/docs/tooling#babel-plugin
     styledComponents: true,
   },
+  rewrites: async () => {
+    return [
+      {
+        source: '/api/:path*',
+        destination: `https://pxapi2-master-cnmm.scb.se/api/v2/:path*`,
+      },
+    ]
+  },
 };
 
 const plugins = [
