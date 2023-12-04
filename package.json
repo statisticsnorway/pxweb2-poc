@@ -1,9 +1,10 @@
 {
   "name": "@pxweb2-poc/source",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "start": "npx nx serve pxweb2-next-pagerouter-styledcomponents",
+    "start-next": "npx nx serve pxweb2-next-pagerouter-styledcomponents",
+    "start-react": "npx nx serve pxweb2-react-reactrouter-styledcomponents",
     "storybook": "npx nx run pxweb2-ui:storybook",
     "generate-types": "npx openapi-typescript https://raw.githubusercontent.com/statisticssweden/PxApiSpecs/master/PxAPI-2.yml -o ./pxweb2-next-pagerouter-styledcomponents/api/schema.d.ts"
   },
@@ -16,6 +17,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
+    "react-router-dom": "6.11.2",
     "styled-components": "5.3.6",
     "tslib": "^2.3.0"
   },

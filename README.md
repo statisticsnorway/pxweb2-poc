@@ -7,7 +7,9 @@
 
 ## Start the app
 
-To start the development server run `nx serve pxweb2-poc-app`. Open your browser and navigate to http://localhost:4200/. Happy coding!
+To start the development server, run `npm run start-react` or `npm run start-next`. Open your browser and navigate to http://localhost:4200/. Happy coding!
+
+To see the commands to run the development servers, look at the `start-next` and `start-react` lines in the `scripts` part of the `package.json` file.
 
 
 ## Generate code
