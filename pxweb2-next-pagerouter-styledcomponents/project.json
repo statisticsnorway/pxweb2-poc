@@ -51,12 +51,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "pxweb2-next-pagerouter-styledcomponents/**/*.{ts,tsx,js,jsx}"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     }
   },
   "tags": []
