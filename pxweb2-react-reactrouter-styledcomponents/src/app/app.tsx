@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import { VariableSelector } from '@pxweb2-poc/pxweb2-ui';
 
@@ -8,21 +9,25 @@ const StyledApp = styled.div`
 `;
 
 export function App() {
+  const { t } = useTranslation();
+
   return (
     <StyledApp>
       <nav role="navigation">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{t('home')}</Link>
           </li>
           <li>
-            <Link to="/tabell">Tabell</Link>
+            <Link to="/tabell">{t('tabel')}</Link>
           </li>
         </ul>
       </nav>
 
       <main>
-        <h1>Welcome pxweb2-react-reactrouter-styledcomponents!</h1>
+        <h1>{t('apptitle')}</h1>
+        <p>{t('test')}</p>
+
         <VariableSelector
           title="Variable 1"
           required={true}
