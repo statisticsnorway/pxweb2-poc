@@ -5,7 +5,7 @@ const StyledErrorPage = styled.div`
   color: pink;
 `;
 
-export function ErrorPage() {
+function ErrorPage() {
   const error = useRouteError();
 
   if (isRouteErrorResponse(error)) {

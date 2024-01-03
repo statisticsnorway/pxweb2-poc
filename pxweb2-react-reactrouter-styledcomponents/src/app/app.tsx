@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { VariableSelector } from '@pxweb2-poc/pxweb2-ui';
+import LanguageChooser from '../components/LanguageChooser';
 
 const StyledApp = styled.div`
   // Your style here
@@ -27,6 +28,7 @@ export function App() {
       <main>
         <h1>{t('apptitle')}</h1>
         <p>{t('test')}</p>
+        <p>{t('test', { ns: 'statistics' })}</p>
 
         <VariableSelector
           title="Variable 1"
@@ -39,6 +41,10 @@ export function App() {
           onChange={(variableCode: string, valueCode: string[]) => {}}
         />
       </main>
+
+      <footer>
+        <LanguageChooser />
+      </footer>
     </StyledApp>
   );
 }

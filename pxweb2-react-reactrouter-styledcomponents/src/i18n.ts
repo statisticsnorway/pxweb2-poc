@@ -25,9 +25,10 @@ i18n
     )
   )
   .init({
-    debug: true,
-    lng: 'no',
+    debug: false,
+    lng: 'en',
     fallbackLng: 'en',
+    supportedLngs: ['en', 'no'],
     ns: ['common', 'statistics'],
     defaultNS: 'common',
     interpolation: {

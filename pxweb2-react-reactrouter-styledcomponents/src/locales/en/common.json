@@ -3,5 +3,6 @@
   "description": "description of common.json",
   "test": "test of common.json",
   "home": "Home",
-  "tabel": "tabel"
+  "tabel": "tabel",
+  "changeLanguage": "Change language"
 }

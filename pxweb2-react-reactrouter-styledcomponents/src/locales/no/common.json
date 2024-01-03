@@ -3,5 +3,6 @@
   "description": "en beskrivelse av common.json",
   "test": "test av common.json",
   "home": "Hjem",
-  "tabel": "tabell"
+  "tabel": "tabell",
+  "changeLanguage": "Skift språk"
 }
