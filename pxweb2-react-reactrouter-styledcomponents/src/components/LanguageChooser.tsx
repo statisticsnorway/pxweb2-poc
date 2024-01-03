@@ -41,7 +41,7 @@ function LanguageChooser() {
               supportedLanguagesFromJson[lngCode].nativeName;
 
             return (
-              <LanguageChooserItem value={lngCode}>
+              <LanguageChooserItem value={lngCode} key={lngCode}>
                 {languageNativeName}
               </LanguageChooserItem>
             );
