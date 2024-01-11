@@ -26,7 +26,7 @@ export function App() {
       </nav>
 
       <main>
-        <h1>{t('apptitle')}</h1>
+        <h1>{t('welcome.apptitle')}</h1>
         <p>{t('test')}</p>
         <p>{t('test', { ns: 'statistics' })}</p>
 
